@@ -24,10 +24,31 @@ header {
     color: #df6704;
 
 }
+.navbar-toggler{
+    border: solid #df6704 !important;
+}
+.navbar-nav{
+    color: #fff;
+}
+.a nav-link{
+    color: aliceblue;
+}
+.fa-bars{
+    color: #b62626;
+}
 .jumbotron{
-    background-image: url(img/);
+    background-image: url(./multimedia/jumbotrom.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    color: rgb(247, 247, 243);
+    text-shadow: 0 0 5px black;
+    border-radius: 0;
 }
 
+.jumbotron p{
+    color: #b62626;
+}
 main {
     background-image: url(/multimedia/curso2.jpg);
     height: calc(100vh - 80px);
