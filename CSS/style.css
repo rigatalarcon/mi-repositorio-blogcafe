@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+    background-color: #333;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
 header {
     height: 150px;
     width: 100%;
@@ -14,7 +22,6 @@ header {
 }
 
 .navbar-brand {
-    float: left;
     font-size: 50px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: rgb(122, 48, 5);
@@ -34,20 +41,30 @@ header {
     color: aliceblue;
 }
 .fa-bars{
-    color: #b62626;
-}
-.jumbotron{
-    background-image: url(./multimedia/jumbotrom.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 400px;
-    color: rgb(247, 247, 243);
-    text-shadow: 0 0 5px black;
-    border-radius: 0;
+    color: #c77e10;
 }
 
-.jumbotron p{
-    color: #b62626;
+nav.barra {
+    height: 40px;
+    width: 100%;
+    margin: 5px;
+    padding: 10px;
+    
+}
+div.barra-nav {
+    
+    font-size: 25px;
+    color: #ccc;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.barra-nav li:hover {
+    background-color: #c77e10;
+    color: #333;
+    
 }
 main {
     background-image: url(/multimedia/curso2.jpg);
@@ -205,40 +222,34 @@ main {
 footer {
     width: 100%;
     height: 100px;
-    font-size: 30px;
-    background-color: black;
-    color: #fff;
-    text-transform: capitalize;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 20px;
+    display: flex;
+    flex-direction: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    
+    
 }
 
 .contacto {
-    color: yellow;
-    float: left;
+    color: orange;
     font-size: 30px;
+    text-transform: uppercase;
 }
 
 footer p {
-    text-align: center;
-    height: 30px;
-    margin-bottom: 2px;
-
+    color: rgb(252, 252, 252);
+    font-size: 30px;
 }
 
 footer a:hover {
-    background-color: rgb(200, 212, 28);
+    background-color: rgb(218, 168, 31);
     color: rgb(218, 57, 8);
 }
 
-.redes {
-    text-align: center;
-    font-size: 30px;
-    letter-spacing: 30px;
-}
-
 .redes a {
+    font-size: 30PX;
     color: orange;
+    letter-spacing: 20px;
 }
 
 /*boton subir a arriba*/
@@ -267,8 +278,7 @@ form {
     width: 300px;
 }
 
-input,
-textarea {
+input.textarea {
     border: 0;
     outline: none;
     width: 280px;
@@ -309,19 +319,23 @@ textarea {
 .boton-enviar:active {
     background-color: aqua;
 }
-
-.volver-inicio{
-    height: 30px;
-    width: 35px;
+/*boton volver inicio*/
+.btn-inicio{
+    height: 50px;
+    width: 100%;
+    padding-bottom: 100px;
     display: inline-flex;
-    justify-content: flex-end;
+    justify-content: center;
+}
+.volver-inicio{
+    color: #b62626;
 }
 
-.volver-boton{
+.btn-volver{
     
     background-color: coral;
     color: #b62626;
-    font-size: 10px;
+    font-size: 30px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 12px;
     border: 2px solid #b62626;
