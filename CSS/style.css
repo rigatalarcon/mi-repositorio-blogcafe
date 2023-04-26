@@ -3,242 +3,356 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+html{
+    width: 100%;
+}
 body {
-    margin: 0;
-    background-color: #333;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    min-height: 100vh;
+    width: 100%;
+    min-height: 3vh;
+    display: flex;
+    flex-direction: column;
+
 }
 
+
+/*barra nav header*/
 header {
-    height: 150px;
-    width: 100%;
     background-color: rgb(223, 160, 44);
     border: 3px;
     padding: 20px;
-
 }
-
+main {
+    width: 100%;
+    height: 500%;
+    margin-bottom: 0;
+    
+}
 .navbar-brand {
     font-size: 50px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: rgb(122, 48, 5);
+    text-decoration: underline;
 }
 
 .navbar span {
     color: #df6704;
 
 }
-.navbar-toggler{
+
+.navbar-toggler {
     border: solid #df6704 !important;
 }
-.navbar-nav{
-    color: #fff;
+
+.collapse {
+    flex-direction: row-reverse;
+
 }
-.a nav-link{
+
+.navbar-nav {
+    color: #fff;
+    font-size: 25px;
+
+}
+
+.a nav-link {
     color: aliceblue;
 }
-.fa-bars{
+
+.fa-bars {
     color: #c77e10;
 }
 
+/*fin de header*/
 nav.barra {
-    height: 40px;
     width: 100%;
-    margin: 5px;
-    padding: 10px;
-    
 }
+
 div.barra-nav {
-    
     font-size: 25px;
     color: #ccc;
     text-decoration: none;
+    list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-direction: row;
 }
+
 .barra-nav li:hover {
     background-color: #c77e10;
     color: #333;
-    
-}
-main {
-    background-image: url(/multimedia/curso2.jpg);
-    height: calc(100vh - 80px);
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    background-color: rgb(243, 191, 191);
 }
 
-.nav {
-    height: 30px;
-    width: 100%;
-    background-color: rgb(71, 70, 70);
+.container {
+    position: relative;
 }
 
-.nav-link {
-    color: aliceblue;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 25px;
-    display: inline;
-    text-align: justify;
+.topleft {
+    color: black;
+    position: absolute;
+    background-color: rgba(112, 128, 144, 0.295);
+    top: 8px;
+    left: 16px;
+    font-size: 18px;
 }
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+.topnav {
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    background-color: #333;
+    background-image: linear-gradient(orange, #333);
+}
+
+.topnav a {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around !important;
+    align-items: flex-start;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: height 4s;
+}
+
+.topnav a:hover {
+    background-color: #f3ab25a4;
+    color: black;
+
+}
+
+@media screen and (max-width: 600px) {
+    .topnav {
+        flex-direction: column;
+        align-items: flex-start;
+        width: auto;
+    }
+    .topnav a{
+        border: #1a0303 solid 2px;
+        width: 35%;
+        font-size: 15px;
+        margin: 3px;
+        padding: 5px;
+    }
+}
+
 
 .contenedor {
     width: 50rem;
     margin: 0 auto;
 }
-
-
-.leyenda {
-    margin-top: 5rem;
-    float: left;
-    width: 30%;
-    border: 3px solid red;
-    margin: 30px;
-    padding: 20px;
-    background-color: rgb(250, 192, 192);
+/*inicio leyenda index*/
+.pag-prin {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../multimedia/jumbotrom.jpg);
+    background-position:calc(100vh,auto);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-
-.leyenda h1 {
-    color: brown;
+.leyenda-ini {
+    margin: 10px;
+    padding: 5px;
+    color: #fffefe;
+    text-shadow: 0 0 5px rgb(255, 255, 255);
     background-color: transparent;
 }
 
-.leyenda p {
-    text-align: center;
-    color: black;
-
-    font-size: 20px;
+.leyenda-ini h2 {
+    font-size: 30px;
+    color: rgb(235, 220, 220);
+    text-shadow: 0 0 5px black;
+    display: flex;
+    flex-direction: row;
 }
 
-.leyenda a {
+.leyenda-r p {
+    text-align: justify;
+    color: rgb(10, 6, 2);
+    font-size: 20px;
+    text-shadow: 0 0 5px rgb(255, 255, 255);
+    border: #af5205 solid 2px;
+}
+
+.leyenda-r a {
     color: black;
     background-color: rgb(243, 106, 27);
-    font-size: 20px;
+    font-size: 15px;
+    padding: 3px;
+    text-align: center;
 }
 
-.leyenda a:hover {
-    color: yellowgreen;
-    background-color: red;
+.leyenda-r a:hover {
+    color: rgba(49, 231, 176, 0.63);
+    background-color: rgb(228, 138, 138);
 }
 
-.contenedor-dulces {
+@media (max-width:480px) {
+    .leyenda-ini {
+        background-color: #333;
+
+    }
+
+    .leyenda-ini h2 {
+        font-size: 15px;
+    }
+
+    .leyenda-r p {
+        font-size: 10px;
+    }
+}
+/*fin leyenda index*/
+/*inicio leyenda-empresa*/
+
+.leyenda-empresa {
     width: 100%;
-    background-color: transparent;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 200px 200px 200px;
-    grid-template-areas:
-        "img1 img2 img3 img3"
-        "img1 img4 img5 img6"
-        "img7 img4 img8 img8"
-        "img9 img10 img11 img12";
+    height: 500px;
+    background-image: url(../multimedia/blog2.webp);
+    background-size: cover;
+    background-position: center;
+
+}
+.leyenda-empresa p {
+    height: 60px;
+    font-size: 20px;
+    width: 40%;
+    color: #ccc;
+    background-color: #33333357;
+    padding: 3px;
+    border-color: 3px solid black;
+}
+
+
+/* pagina productos*/
+section {
+    display: flex;
+    justify-content:space-between;
+    background-color: rgb(37, 39, 39);
     padding: 20px;
-    grid-gap: 10px;
+}
+
+.card {
+    width: 30%;
+    min-height: 300px;
+    background-color: orange;
+    padding: 10px;
+    border: 7px solid black;
+}
+
+.card__img {
+    
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    border: 7px solid black;
+}
+
+.card__title {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: antiquewhite;
+    text-shadow: 0 0 5px black;
+    font-size: 27px;
+    margin-top: 20px;
+}
+
+.card__desc {
+    padding: 15px;
+    text-align: justify;
+}
+
+.card__boton {
+    background-color: grey;
+    color: beige;
+    text-decoration: none;
+    display: block;
+    width: 90%;
+    margin: 5%;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    padding: 10px 20px;
+}
+
+.card__boton:hover {
+    background-color: blueviolet;
+}
+
+.card--xl {
+    width: 100%;
+    border: blue;
+}
+.card__img--xl{
+    height: 250px;
 
 }
 
-.img {
-    border: 3px solid black;
-    background-size: cover;
-    background-position: center;
-    border-radius: 5px;
+.card__title--xl{
+    font-size: 40px;
+    color: red;
 }
 
-.img1 {
-    background-image: url(/multimedia/curso3.jpg);
-    background-position: center;
-    background-size: cover;
-    grid-area: img1;
+.card--md{
+    width: 45%;
 }
+/*fin de productos*/
+/*leyenda logueate*/
 
-.img2 {
-    background-image: url(/multimedia/blog2.webp);
+.leyenda-log {
+    width: 100%;
+    height: auto;
+    color: #241111;
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url(../multimedia/nosotros.jpg);
     background-position: center;
     background-size: cover;
+    text-shadow: 0 0 5px#ccc ;
+
 }
-
-.img3 {
-    background-image: url(/multimedia/blog3.webp);
-    background-position: center;
-    background-size: cover;
-}
-
-.img4 {
-    background-image: url(/multimedia/curso1.jpg);
-    background-position: center;
-    background-size: cover;
-}
-
-.img5 {
-    background-image: url(/multimedia/cafe4.png);
-    background-position: center;
-    background-size: cover;
-}
-
-.img6 {
-    background-image: url(/multimedia/cafe5.png);
-    background-position: center;
-    background-size: cover;
-}
-
-.img7 {
-    background-image: url(/multimedia/cafe6.png);
-    background-position: center;
-    background-size: cover;
-}
-
-.img8 {
-    background-image: url(/multimedia/cafe7.png);
-    background-position: center;
-    background-size: cover;
-}
-
-.img9 {
-    background-image: url(/multimedia/cafe8.png);
-    background-position: center;
-    background-size: cover;
-}
-
-.img10 {
-    background-image: url(/multimedia/);
-    background-position: center;
-    background-size: cover;
-    grid-area: img10, img11;
-}
-
-.img11 {
-    background-image: url(/img/img11.png);
-    background-position: center;
-    background-size: cover;
+.leyenda-log p {
+    background-color: #cccccc5b;
+    width: 60%;
+    font-size: 30px;
 }
 
 footer {
     width: 100%;
-    height: 100px;
+    position: absolute;
+    bottom: 0;
     display: flex;
+    background-color: #333;
     flex-direction: row nowrap;
     justify-content: space-around;
     align-items: center;
-    
-    
+    margin-top: auto;
 }
 
 .contacto {
     color: orange;
-    font-size: 30px;
+    font-size: 20px;
     text-transform: uppercase;
 }
 
 footer p {
     color: rgb(252, 252, 252);
-    font-size: 30px;
+    font-size: 15px;
+}
+
+.redes a {
+    font-size: 20PX;
+    color: orange;
+    letter-spacing: 20px;
 }
 
 footer a:hover {
@@ -246,13 +360,13 @@ footer a:hover {
     color: rgb(218, 57, 8);
 }
 
-.redes a {
-    font-size: 30PX;
-    color: orange;
-    letter-spacing: 20px;
+@media screen and (max-width:420px) {
+    footer {
+        width: 90%;
+        display: table-column;
+    }
 }
 
-/*boton subir a arriba*/
 .subir {
     height: 40px;
     width: 40px;
@@ -266,10 +380,9 @@ footer a:hover {
     font-size: 25px;
 }
 
-/*ingreso de datos de contacto*/
-
+/*formulario logueate*/
 form {
-    background-color: rgb(144, 235, 83);
+    background-color: rgba(116, 138, 101, 0.527);
     border-radius: 2px;
     color: #1a0303;
     font-size: 1.5rem;
@@ -283,7 +396,7 @@ input.textarea {
     outline: none;
     width: 280px;
 }
-
+/*formulario logueate fin*/
 .field {
     border: solid 1px #ccc;
     padding: 10px;
@@ -297,9 +410,7 @@ input.textarea {
 .center-contet {
     text-align: center;
 }
-
-/*boton-enviar*/
-
+/*boton enviar*/
 .boton-enviar {
     background-color: white;
     text-align: center;
@@ -319,24 +430,18 @@ input.textarea {
 .boton-enviar:active {
     background-color: aqua;
 }
-/*boton volver inicio*/
-.btn-inicio{
-    height: 50px;
-    width: 100%;
-    padding-bottom: 100px;
-    display: inline-flex;
-    justify-content: center;
-}
-.volver-inicio{
-    color: #b62626;
-}
+/*boton enviar fin*/
 
-.btn-volver{
-    
-    background-color: coral;
-    color: #b62626;
-    font-size: 30px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 12px;
-    border: 2px solid #b62626;
+a.boton-ini {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 10PX;
+    font-size: 20PX;
+    color: #1a0303;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid#1a0303;
+    box-sizing: border-box;
 }
