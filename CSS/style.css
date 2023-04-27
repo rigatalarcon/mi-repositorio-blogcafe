@@ -1,0 +1,438 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/*barra nav header*/
+header {
+    height: 150px;
+    background-color: rgb(223, 160, 44);
+    border: 3px;
+    padding: 20px;
+}
+main {
+    width: 100%;
+    height: calc(100vh -199px);
+    
+}
+.navbar-brand {
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(122, 48, 5);
+    text-decoration: underline;
+}
+
+.navbar span {
+    color: #df6704;
+
+}
+
+.navbar-toggler {
+    border: solid #df6704 !important;
+}
+
+.collapse {
+    flex-direction: row-reverse;
+
+}
+
+.navbar-nav {
+    color: #fff;
+    font-size: 25px;
+
+}
+
+.a nav-link {
+    color: aliceblue;
+}
+
+.fa-bars {
+    color: #c77e10;
+}
+
+/*fin de header*/
+nav.barra {
+    width: 100%;
+}
+
+div.barra-nav {
+    font-size: 25px;
+    color: #ccc;
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+.barra-nav li:hover {
+    background-color: #c77e10;
+    color: #333;
+}
+
+.container {
+    position: relative;
+}
+
+.topleft {
+    color: black;
+    position: absolute;
+    background-color: rgba(112, 128, 144, 0.295);
+    top: 8px;
+    left: 16px;
+    font-size: 18px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+.topnav {
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    background-color: #333;
+    background-image: linear-gradient(orange, #333);
+}
+
+.topnav a {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around !important;
+    align-items: flex-start;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: height 4s;
+}
+
+.topnav a:hover {
+    background-color: #f3ab25a4;
+    color: black;
+
+}
+
+@media screen and (max-width: 600px) {
+    .topnav {
+        flex-direction: column;
+        align-items: flex-start;
+        width: auto;
+    }
+    .topnav a{
+        border: #1a0303 solid 2px;
+        width: 35%;
+        font-size: 15px;
+        margin: 3px;
+        padding: 5px;
+    }
+}
+
+
+.contenedor {
+    width: 50rem;
+    margin: 0 auto;
+}
+/*inicio leyenda index*/
+.pag-prin {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../multimedia/jumbotrom.jpg);
+    background-position:calc(100vh,auto);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.leyenda-ini {
+    margin: 10px;
+    padding: 5px;
+    color: #fffefe;
+    text-shadow: 0 0 5px rgb(255, 255, 255);
+    background-color: transparent;
+}
+
+.leyenda-ini h2 {
+    font-size: 30px;
+    color: rgb(235, 220, 220);
+    text-shadow: 0 0 5px black;
+    display: flex;
+    flex-direction: row;
+}
+
+.leyenda-r p {
+    text-align: justify;
+    color: rgb(10, 6, 2);
+    font-size: 20px;
+    text-shadow: 0 0 5px rgb(255, 255, 255);
+    border: #af5205 solid 2px;
+}
+
+.leyenda-r a {
+    color: black;
+    background-color: rgb(243, 106, 27);
+    font-size: 15px;
+    padding: 3px;
+    text-align: center;
+}
+
+.leyenda-r a:hover {
+    color: rgba(49, 231, 176, 0.63);
+    background-color: rgb(228, 138, 138);
+}
+
+@media (max-width:480px) {
+    .leyenda-ini {
+        background-color: #333;
+
+    }
+
+    .leyenda-ini h2 {
+        font-size: 15px;
+    }
+
+    .leyenda-r p {
+        font-size: 10px;
+    }
+}
+/*fin leyenda index*/
+/*inicio leyenda-empresa*/
+
+.leyenda-empresa {
+    width: 100%;
+    height: 500px;
+    background-image: url(../multimedia/blog2.webp);
+    background-size: cover;
+    background-position: center;
+
+}
+.leyenda-empresa p {
+    height: 60px;
+    font-size: 20px;
+    width: 40%;
+    color: #ccc;
+    background-color: #33333357;
+    padding: 3px;
+    border-color: 3px solid black;
+}
+
+
+/* pagina productos*/
+section {
+    display: flex;
+    justify-content:space-between;
+    background-color: rgb(37, 39, 39);
+    padding: 20px;
+}
+
+.card {
+    width: 30%;
+    min-height: 300px;
+    background-color: orange;
+    padding: 10px;
+    border: 7px solid black;
+}
+
+.card__img {
+    
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    border: 7px solid black;
+}
+
+.card__title {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: antiquewhite;
+    text-shadow: 0 0 5px black;
+    font-size: 27px;
+    margin-top: 20px;
+}
+
+.card__desc {
+    padding: 15px;
+    text-align: justify;
+}
+
+.card__boton {
+    background-color: grey;
+    color: beige;
+    text-decoration: none;
+    display: block;
+    width: 90%;
+    margin: 5%;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    padding: 10px 20px;
+}
+
+.card__boton:hover {
+    background-color: blueviolet;
+}
+
+.card--xl {
+    width: 100%;
+    border: blue;
+}
+.card__img--xl{
+    height: 250px;
+
+}
+
+.card__title--xl{
+    font-size: 40px;
+    color: red;
+}
+
+.card--md{
+    width: 45%;
+}
+/*fin de productos*/
+/*leyenda logueate*/
+
+.leyenda-log {
+    width: 100%;
+    height: auto;
+    color: #241111;
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url(../multimedia/nosotros.jpg);
+    background-position: center;
+    background-size: cover;
+    text-shadow: 0 0 5px#ccc ;
+
+}
+.leyenda-log p {
+    background-color: #cccccc5b;
+    width: 60%;
+    font-size: 30px;
+}
+
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    background-color: #333;
+    flex-direction: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: auto;
+}
+
+.contacto {
+    color: orange;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+footer p {
+    color: rgb(252, 252, 252);
+    font-size: 15px;
+}
+
+.redes a {
+    font-size: 20PX;
+    color: orange;
+    letter-spacing: 20px;
+}
+
+footer a:hover {
+    background-color: rgb(218, 168, 31);
+    color: rgb(218, 57, 8);
+}
+
+@media screen and (max-width:420px) {
+    footer {
+        width: 90%;
+        display: table-column;
+    }
+}
+
+.subir {
+    height: 40px;
+    width: 40px;
+    background-color: orange;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
+}
+
+/*formulario logueate*/
+form {
+    background-color: rgba(116, 138, 101, 0.527);
+    border-radius: 2px;
+    color: #1a0303;
+    font-size: 1.5rem;
+    padding: 10px;
+    margin: 0 auto;
+    width: 300px;
+}
+
+input.textarea {
+    border: 0;
+    outline: none;
+    width: 280px;
+}
+/*formulario logueate fin*/
+.field {
+    border: solid 1px #ccc;
+    padding: 10px;
+
+}
+
+.field:focus {
+    border-color: rgb(37, 6, 6);
+}
+
+.center-contet {
+    text-align: center;
+}
+/*boton enviar*/
+.boton-enviar {
+    background-color: white;
+    text-align: center;
+}
+
+.boton-enviar a {
+    text-align: center;
+    font-size: 20px;
+    color: black;
+}
+
+.boton-enviar:hover {
+    background-color: rgb(236, 240, 7);
+    color: rgb(0, 1, 2);
+}
+
+.boton-enviar:active {
+    background-color: aqua;
+}
+/*boton enviar fin*/
+
+a.boton-ini {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 10PX;
+    font-size: 20PX;
+    color: #1a0303;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid#1a0303;
+    box-sizing: border-box;
+}
