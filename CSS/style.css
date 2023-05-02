@@ -4,7 +4,10 @@
     box-sizing: border-box;
 }
 
-
+body {
+    width: 100%;
+    min-height: 100vh;
+}
 
 /*barra nav header*/
 header {
@@ -13,17 +16,21 @@ header {
     border: 3px;
     padding: 20px;
 }
-main {
-    width: 100%;
-    height: calc(100vh -199px);
-    
-}
+
 .navbar-brand {
     font-size: 50px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: rgb(122, 48, 5);
     text-decoration: underline;
 }
+
+@media screen and (max-width:420px) {
+    .navbar-brand {
+        font-size: 25px;
+    }
+}
+    
+
 
 .navbar span {
     color: #df6704;
@@ -54,6 +61,7 @@ main {
 }
 
 /*fin de header*/
+
 nav.barra {
     width: 100%;
 }
@@ -89,9 +97,9 @@ div.barra-nav {
 
 img {
     width: 100%;
-    height: auto;
+    
+    background-color: #333;
 }
-
 
 .topnav {
     display: flex;
@@ -139,27 +147,27 @@ img {
     width: 50rem;
     margin: 0 auto;
 }
-/*inicio leyenda index*/
-.pag-prin {
+/*inicio leyenda index pag principal*/
+main {
     width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    height:calc(100vh - 245px );
     background-image: url(../multimedia/jumbotrom.jpg);
-    background-position:calc(100vh,auto);
-    background-size: cover;
     background-repeat: no-repeat;
+    background-size: cover;
 }
-.leyenda-ini {
-    margin: 10px;
-    padding: 5px;
+.leyenda-ini {    
     color: #fffefe;
     text-shadow: 0 0 5px rgb(255, 255, 255);
     background-color: transparent;
+    
 }
+.pag-prin {
+    width: 100%;
+    height: auto;    
 
-.leyenda-ini h2 {
+
+}
+.pag-prin h2 {
     font-size: 30px;
     color: rgb(235, 220, 220);
     text-shadow: 0 0 5px black;
@@ -181,17 +189,18 @@ img {
     font-size: 15px;
     padding: 3px;
     text-align: center;
+    margin: 2px;
 }
 
 .leyenda-r a:hover {
-    color: rgba(49, 231, 176, 0.63);
-    background-color: rgb(228, 138, 138);
+    color: rgba(21, 5, 165, 0.63);
+    background-color: rgb(25, 236, 236);
 }
 
 @media (max-width:480px) {
     .leyenda-ini {
         background-color: #333;
-
+    
     }
 
     .leyenda-ini h2 {
@@ -201,8 +210,11 @@ img {
     .leyenda-r p {
         font-size: 10px;
     }
+    .leyenda-r a{
+        font-size: 10px;
+    }
 }
-/*fin leyenda index*/
+/*fin leyenda index pag principal*/
 /*inicio leyenda-empresa*/
 
 .leyenda-empresa {
@@ -319,7 +331,7 @@ section {
 
 footer {
     width: 100%;
-    position: absolute;
+    /*position: absolute;*/
     bottom: 0;
     display: flex;
     background-color: #333;
@@ -353,11 +365,12 @@ footer a:hover {
 
 @media screen and (max-width:420px) {
     footer {
-        width: 90%;
+        width: 100%;
         display: table-column;
     }
 }
 
+/*boton volver arriba*/
 .subir {
     height: 40px;
     width: 40px;
@@ -370,6 +383,15 @@ footer a:hover {
     line-height: 40px;
     font-size: 25px;
 }
+@media screen and (max-width:420px){
+    .subir {
+        height: 20px;
+        width: 20px;
+        line-height: 20px;
+        font-size: 12.5px;
+    }
+}
+/* fin boton volver arriba*/
 
 /*formulario logueate*/
 form {
@@ -423,16 +445,3 @@ input.textarea {
 }
 /*boton enviar fin*/
 
-a.boton-ini {
-    width: 100%;
-    height: auto;
-    margin: auto;
-    padding: 10PX;
-    font-size: 20PX;
-    color: #1a0303;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid#1a0303;
-    box-sizing: border-box;
-}
