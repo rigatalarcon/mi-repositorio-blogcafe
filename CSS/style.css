@@ -1,3 +1,7 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,600&display=swap');*/
+
+/*font-family: 'Playfair Display', serif;*/
+
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +17,7 @@ body {
 header {
     height: 150px;
     background-color: rgb(223, 160, 44);
-    border: 3px;
+    
     padding: 20px;
 }
 
@@ -29,36 +33,14 @@ header {
         font-size: 25px;
     }
 }
-    
-
 
 .navbar span {
     color: #df6704;
-
 }
-
-.navbar-toggler {
-    border: solid #df6704 !important;
-}
-
 .collapse {
     flex-direction: row-reverse;
-
 }
-
-.navbar-nav {
-    color: #fff;
-    font-size: 25px;
-
-}
-
-.a nav-link {
-    color: aliceblue;
-}
-
-.fa-bars {
-    color: #c77e10;
-}
+/*barra nav header fin*/
 
 /*fin de header*/
 
@@ -81,24 +63,30 @@ div.barra-nav {
     background-color: #c77e10;
     color: #333;
 }
-
-.container {
-    position: relative;
-}
-
-.topleft {
-    color: black;
-    position: absolute;
-    background-color: rgba(112, 128, 144, 0.295);
-    top: 8px;
-    left: 16px;
-    font-size: 18px;
-}
-
-img {
+/*pagina contacto*/
+.contacto-pag {
     width: 100%;
-    
-    background-color: #333;
+    height: calc(100vh - 245px);
+    background-image: url(../multimedia/cafe4.png);
+    background-size: cover;
+    background-position: center;
+}
+.container {
+    font-size: 35px;
+    text-shadow: 2px 2px 5px red;
+    width:auto;
+    color:#ccc;
+    background-color: #33333365;
+}
+
+.leyenda-contacto {
+    width: 50%;
+    float:right;
+    font-size: 20px;
+    color: #0a0a0a;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-style: double;
+    border-radius: 3px solid ;
 }
 
 .topnav {
@@ -133,7 +121,8 @@ img {
         align-items: flex-start;
         width: auto;
     }
-    .topnav a{
+
+    .topnav a {
         border: #1a0303 solid 2px;
         width: 35%;
         font-size: 15px;
@@ -147,27 +136,25 @@ img {
     width: 50rem;
     margin: 0 auto;
 }
+
 /*inicio leyenda index pag principal*/
-main {
+main.index {
     width: 100%;
-    height:calc(100vh - 245px );
-    background-image: url(../multimedia/jumbotrom.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: calc(100vh - 245px);
+    background-image: url(../multimedia/banner.jpg);
 }
-.leyenda-ini {    
+
+.leyenda-ini {
     color: #fffefe;
     text-shadow: 0 0 5px rgb(255, 255, 255);
     background-color: transparent;
     
-}
-.pag-prin {
-    width: 100%;
-    height: auto;    
-
 
 }
+
 .pag-prin h2 {
+    width: 55%;
+    text-decoration: underline;
     font-size: 30px;
     color: rgb(235, 220, 220);
     text-shadow: 0 0 5px black;
@@ -186,10 +173,9 @@ main {
 .leyenda-r a {
     color: black;
     background-color: rgb(243, 106, 27);
-    font-size: 15px;
-    padding: 3px;
-    text-align: center;
-    margin: 2px;
+    font-size: 25px;
+    border-radius: 3px;
+
 }
 
 .leyenda-r a:hover {
@@ -199,8 +185,8 @@ main {
 
 @media (max-width:480px) {
     .leyenda-ini {
-        background-color: #333;
-    
+        background-color: #857c7cd0;
+
     }
 
     .leyenda-ini h2 {
@@ -210,21 +196,25 @@ main {
     .leyenda-r p {
         font-size: 10px;
     }
-    .leyenda-r a{
+
+    .leyenda-r a {
         font-size: 10px;
     }
 }
+
 /*fin leyenda index pag principal*/
+
 /*inicio leyenda-empresa*/
 
 .leyenda-empresa {
     width: 100%;
-    height: 500px;
+    height: calc(100vh - 245px);
     background-image: url(../multimedia/blog2.webp);
     background-size: cover;
     background-position: center;
 
 }
+
 .leyenda-empresa p {
     height: 60px;
     font-size: 20px;
@@ -238,24 +228,25 @@ main {
 
 /* pagina productos*/
 section {
+    width: 100%;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     background-color: rgb(37, 39, 39);
     padding: 20px;
 }
 
 .card {
-    width: 30%;
-    min-height: 300px;
+    width: 30%;    
+    min-height: 350px;
     background-color: orange;
     padding: 10px;
     border: 7px solid black;
 }
 
 .card__img {
-    
+
     width: 100%;
-    height: auto;
+    height: 200 px;
     background-size: cover;
     background-position: center;
     border: 7px solid black;
@@ -296,39 +287,55 @@ section {
     width: 100%;
     border: blue;
 }
-.card__img--xl{
+
+.card__img--xl {
     height: 250px;
 
 }
 
-.card__title--xl{
+.card__title--xl {
     font-size: 40px;
     color: red;
 }
 
-.card--md{
+.card--md {
     width: 45%;
 }
-/*fin de productos*/
-/*leyenda logueate*/
 
-.leyenda-log {
+/*fin de productos*/
+
+/*pagina lo logueate*/
+main.logueate {
     width: 100%;
-    height: auto;
-    color: #241111;
-    font-family: 'Times New Roman', Times, serif;
-    background-image: url(../multimedia/nosotros.jpg);
+    height: calc(100vh - 245px);
+    background-image: url(../multimedia/cafe4.png);
     background-position: center;
     background-size: cover;
-    text-shadow: 0 0 5px#ccc ;
 
 }
-.leyenda-log p {
-    background-color: #cccccc5b;
-    width: 60%;
-    font-size: 30px;
+
+.leyenda-logueate {
+    width: 100%;
+    color: #241111;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 0 0 5px#ccc;
+    text-align: right;
+    padding-right: 50px;
+    text-decoration: underline;
 }
 
+.formulario-leyenda {
+    float: right;
+    padding-right: 180px;
+}
+
+.form-group label {
+    float: left;
+}
+
+/*fin pagina logueate*/
+
+/*inicio footer*/
 footer {
     width: 100%;
     /*position: absolute;*/
@@ -370,6 +377,8 @@ footer a:hover {
     }
 }
 
+/*fin footer*/
+
 /*boton volver arriba*/
 .subir {
     height: 40px;
@@ -383,7 +392,8 @@ footer a:hover {
     line-height: 40px;
     font-size: 25px;
 }
-@media screen and (max-width:420px){
+
+@media screen and (max-width:420px) {
     .subir {
         height: 20px;
         width: 20px;
@@ -391,25 +401,56 @@ footer a:hover {
         font-size: 12.5px;
     }
 }
+
 /* fin boton volver arriba*/
 
-/*formulario logueate*/
+/*formulario registrate*/
+.pagina-registrate {
+    width: 100%;
+    height: calc(100vh - 245px);
+    background-color: #333;
+    background-size: cover;
+    background-image: url(../multimedia/curso3.jpg);
+    padding-top: 20px;
+    
+}
+
+.leyenda-registrate H2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    border-style: double;
+    
+}
+
 form {
     background-color: rgba(116, 138, 101, 0.527);
     border-radius: 2px;
-    color: #1a0303;
-    font-size: 1.5rem;
+    color: #1f1b1b;
+    font-size: 15px;
     padding: 10px;
     margin: 0 auto;
-    width: 300px;
+    width: 200px;
+    height: auto;
+    float:initial;
 }
-
+/*
 input.textarea {
     border: 0;
     outline: none;
-    width: 280px;
+    width: 420px;
+}*/
+@media  screen and (max-width: 420px;) {
+    form {
+        width: 450px;
+        font-size: 10px;
+    }
 }
-/*formulario logueate fin*/
+    
+
+/*formulario registrate fin*/
 .field {
     border: solid 1px #ccc;
     padding: 10px;
@@ -423,9 +464,15 @@ input.textarea {
 .center-contet {
     text-align: center;
 }
+@media screen and (max-width: 576px) {
+    breakpoint-sm {
+
+    }
+    
+}
 /*boton enviar*/
 .boton-enviar {
-    background-color: white;
+    background-color: rgb(41, 27, 27);
     text-align: center;
 }
 
@@ -443,5 +490,36 @@ input.textarea {
 .boton-enviar:active {
     background-color: aqua;
 }
+
 /*boton enviar fin*/
 
+.button {
+    position: absolute;
+    top: 900px;
+    right: 50%;
+    width: 100px;
+    height: 50px;
+    border: 3px solid #73AD21;
+    text-align: center;
+    text-decoration: solid;
+    outline: none;
+    color: #0a0a0a;
+    background-color: #daba2f;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #e26217;
+}
+
+.button:hover {
+    background-color: #a0982e
+}
+@media screen and (max-width: 420px){
+    .button {
+        position: static
+        top:relative;
+        left: 0;
+    
+    }
+    
+}
+/*boton volver inicio/
