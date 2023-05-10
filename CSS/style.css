@@ -63,32 +63,7 @@ div.barra-nav {
     background-color: #c77e10;
     color: #333;
 }
-/*pagina contacto*/
-.contacto-pag {
-    width: 100%;
-    height: calc(100vh - 245px);
-    background-image: url(../multimedia/cafe4.png);
-    background-size: cover;
-    background-position: center;
-}
-.container {
-    font-size: 35px;
-    text-shadow: 2px 2px 5px red;
-    width:auto;
-    color:#ccc;
-    background-color: #33333365;
-}
-
-.leyenda-contacto {
-    width: 50%;
-    float:right;
-    font-size: 20px;
-    color: #0a0a0a;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    border-style: double;
-    border-radius: 3px solid ;
-}
-
+/* barra navegacion inicio*/
 .topnav {
     display: flex;
     justify-content: space-around;
@@ -130,6 +105,50 @@ div.barra-nav {
         padding: 5px;
     }
 }
+/* barra navegacion fin*/
+
+/*pagina contacto*/
+
+.contacto-pag {
+    width: 100%;
+    height: calc(100vh - 245px);
+    background-image: url(../multimedia/cafe4.png);
+    background-size: cover;
+    background-position: center;
+}
+.container {
+    font-size: 35px;
+    text-shadow: 2px 2px 5px rgb(255, 123, 0);
+    color:#000000;
+    
+    text-decoration: underline;
+    text-align: center;
+}
+
+.leyenda-contacto {
+    width: 30%;
+    float:right;
+    font-size: 20px;
+    color: #0a0a0a;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-style: double;
+    border-radius: 3px solid ;
+}
+.form-contacto {
+    text-align: center;
+    text-decoration:underline;
+    background-color: #1a0303;
+    color: #af5205;
+}
+.formu-contacto {
+    padding-bottom: 5px;
+}
+.btn btn-primary {
+    margin-top: 3px;
+}
+/*pagina contacto fin*/
+
+
 
 
 .contenedor {
@@ -175,7 +194,6 @@ main.index {
     background-color: rgb(243, 106, 27);
     font-size: 25px;
     border-radius: 3px;
-
 }
 
 .leyenda-r a:hover {
@@ -186,7 +204,6 @@ main.index {
 @media (max-width:480px) {
     .leyenda-ini {
         background-color: #857c7cd0;
-
     }
 
     .leyenda-ini h2 {
@@ -227,8 +244,34 @@ main.index {
 
 
 /* pagina productos*/
-section {
+main .jumbotron {
     width: 100%;
+    height: calc(100vh - 245px);
+}
+.jumbotron {
+    width: 100%;
+    background-image: url(../multimedia/jumbotrom.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.jumbotron h1 {
+    width: 170px;
+    font-size: 35px;
+    color: #080501;
+    text-shadow: 0 0 5px#1f1b1b;
+    background-color: rgba(241, 198, 57, 0.349);
+}
+
+.jumbotron p {
+    font-size: 30;
+    color: #000000;
+    background-color: #c4810585;
+}
+
+section {
     display: flex;
     justify-content: space-between;
     background-color: rgb(37, 39, 39);
@@ -243,13 +286,8 @@ section {
     border: 7px solid black;
 }
 
-.card__img {
-
-    width: 100%;
-    height: 200 px;
-    background-size: cover;
-    background-position: center;
-    border: 7px solid black;
+.card-img {
+    width: 30%;
 }
 
 .card__title {
@@ -422,7 +460,6 @@ footer a:hover {
     justify-content: center;
     
     border-style: double;
-    
 }
 
 form {
@@ -442,7 +479,7 @@ input.textarea {
     outline: none;
     width: 420px;
 }*/
-@media  screen and (max-width: 420px;) {
+@media  screen and (max-width:420px) {
     form {
         width: 450px;
         font-size: 10px;
@@ -464,13 +501,14 @@ input.textarea {
 .center-contet {
     text-align: center;
 }
-@media screen and (max-width: 576px) {
+/*@media screen and (max-width: 576px) {
     breakpoint-sm {
 
-    }
-    
 }
+    
+}*/
 /*boton enviar*/
+
 .boton-enviar {
     background-color: rgb(41, 27, 27);
     text-align: center;
@@ -493,6 +531,7 @@ input.textarea {
 
 /*boton enviar fin*/
 
+/*boton volver inicio
 .button {
     position: absolute;
     top: 900px;
@@ -522,4 +561,4 @@ input.textarea {
     }
     
 }
-/*boton volver inicio/
+boton volver incio fin*/
