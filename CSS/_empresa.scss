@@ -1,0 +1,28 @@
+/*inicio leyenda-empresa*/
+
+.leyenda-empresa {
+    width: 100%;
+    height: calc(100vh - 245px);
+    background-image: url(../multimedia/cafe6.png);
+    background-size: cover;
+    background-position: center;
+
+        h2{
+            color: aliceblue;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 45px;
+            margin-left: 40px;
+            
+        }
+
+        p{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 10px;
+            font-size: 20px;
+            width: 40%;
+            color: #2b1e25;
+            background-color: rgba(255, 228, 196, 0.384);
+            
+        }
+}
+

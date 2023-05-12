@@ -1,0 +1,100 @@
+/* pagina productos*/
+main .jumbotron {
+    width: 100%;
+    height: calc(100vh - 245px);
+}
+
+.jumbotron {
+    width: 100%;
+    background-image: url(../multimedia/jumbotrom.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.jumbotron h1 {
+    width: 170px;
+    font-size: 35px;
+    color: #080501;
+    text-shadow: 0 0 5px#1f1b1b;
+    background-color: rgba(241, 198, 57, 0.349);
+}
+
+.jumbotron p {
+    font-size: 30;
+    color: #000000;
+    background-color: #c4810585;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(37, 39, 39);
+    padding: 20px;
+}
+
+.card {
+    width: 30%;
+    min-height: 300px;
+    background-color: orange;
+    padding: 10px;
+    border: 7px solid black;
+}
+
+.card-img {
+    width: 100%;
+    height: 180px;
+    background-position: center;
+    background-size: cover;
+}
+
+.card__title {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 5px black;
+    font-size: 27px;
+    margin-top: 20px;
+}
+
+.card__desc {
+    padding: 15px;
+    text-align: justify;
+}
+
+.card__boton {
+    background-color: grey;
+    color: beige;
+    text-decoration: none;
+    display: block;
+    width: 90%;
+    margin: 5%;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    padding: 10px 20px;
+}
+
+.card__boton:hover {
+    background-color: blueviolet;
+}
+
+.card--xl {
+    width: 100%;
+    border: blue;
+}
+
+.card__img--xl {
+    height: 250px;
+}
+
+.card__title--xl {
+    font-size: 40px;
+    color: red;
+}
+
+.card--md {
+    width: 45%;
+}
+
+/*fin de productos*/

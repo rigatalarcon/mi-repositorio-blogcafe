@@ -1,0 +1,29 @@
+/*pagina lo logueate*/
+main.logueate {
+    width: 100%;
+    height: calc(100vh - 245px);
+    background-image: url(../multimedia/cafe4.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.leyenda-logueate {
+    width: 100%;
+    color: #241111;
+    font-family: "Times New Roman", Times, serif;
+    text-shadow: 0 0 5px#ccc;
+    text-align: right;
+    padding-right: 50px;
+    text-decoration: underline;
+}
+
+.formulario-leyenda {
+    float: right;
+    padding-right: 180px;
+}
+
+.form-group label {
+    float: left;
+}
+
+/*fin pagina logueate*/

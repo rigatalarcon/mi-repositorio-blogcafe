@@ -1,0 +1,18 @@
+.info-cafe {
+    width: 100%;
+    height: calc(100vh - 245px);
+    background-image: url(../multimedia/blog2.jpg);
+    background-size: cover;
+    background-position: center;
+
+    p {
+        width: 55%;   
+        margin-left: 15px;
+        font-size: 30px;
+        color: rgb(255, 255, 255);
+        background-color: rgba(222, 184, 135, 0.308);
+        text-shadow: 0 0 5px rgba(238, 156, 4, 0.295);
+        display: flex;
+        flex-direction: column;
+    }
+}
