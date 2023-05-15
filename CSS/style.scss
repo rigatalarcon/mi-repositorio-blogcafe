@@ -1,188 +1,155 @@
-body {
-    width: 100%;
-    min-height: 100vh;
-}
+body
+    width: 100%
+    min-height: 100vh
 
 /*barra nav header*/
-header {
-    height: 150px;
-    background-color: rgb(223, 160, 44);
-    padding: 20px;
+header
+    height: 150px
+    background-color: rgb(223, 160, 44)
+    padding: 20px
 
-    .navbar-brand {
-        font-size: 50px;
-        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-        color: rgb(122, 48, 5);
-        text-decoration: underline;
+    .navbar-brand
+        font-size: 50px
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif
+        color: rgb(122, 48, 5)
+        text-decoration: underline
 
-        span {
-            color: #df6704;
-        }
-    }
+        span
+            color: #df6704
 
-    @media screen and(max-width: 420px) {
-        .navbar-brand {
-            font-size: 25px;
-        }
-    }
+    @media screen and (max-width: 420px)
+        .navbar-brand
+            font-size: 25px
 
-    .collapse {
-        flex-direction: row-reverse;
-    }
-}
-
+    .collapse
+        flex-direction: row-reverse
 
 /* barra navegacion inicio*/
-.topnav {
-    display: flex;
-    justify-content: space-around;
-    overflow: hidden;
-    background-color: #333;
-    background-image: linear-gradient(orange, #333);
+.topnav
+    display: flex
+    justify-content: space-around
+    overflow: hidden
+    background-color: #333
+    background-image: linear-gradient(orange, #333)
 
-    a {
-        font-size: 20px;
-        display: flex;
-        justify-content: space-around !important;
-        align-items: flex-start;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        transition: height 4s;
-    }
+    a
+        font-size: 20px
+        display: flex
+        justify-content: space-around !important
+        align-items: flex-start
+        color: white
+        text-align: center
+        padding: 14px 16px
+        text-decoration: none
+        transition: height 4s
 
-    a:hover {
-        background-color: #f3ab25a4;
-        color: black;
-    }
-}
+    a:hover
+        background-color: #f3ab25a4
+        color: black
 
-@media screen and (max-width: 600px) {
-    .topnav {
-        flex-direction: column;
-        align-items: flex-start;
-        width: auto;
-    }
+@media screen and (max-width: 600px)
+    .topnav
+        flex-direction: column
+        align-items: flex-start
+        width: auto
 
-    .topnav a {
-        border: #1a0303 solid 2px;
-        width: 35%;
-        font-size: 15px;
-        margin: 3px;
-        padding: 5px;
-    }
-}
+    & a
+        border: #1a0303 solid 2px
+        width: 35%
+        font-size: 15px
+        margin: 3px
+        padding: 5px
+
 /* barra navegacion fin*/
 /*inicio leyenda index pag principal*/
-main.index {
-    width: 100%;
-    height: calc(100vh - 245px);
-    background-image: url(../multimedia/banner.jpg);
+main.index
+    width: 100%
+    height: calc(100vh - 245px)
+    background-image: url(../multimedia/banner.jpg)
 
-    .leyenda-ini {
+    .leyenda-ini
 
-        background-color: transparent;
-    }
+        background-color: transparent
 
-    .pag-prin h2 {
-        width: 55%;
-        text-decoration: underline;
-        font-size: 30px;
-        color: rgb(255, 255, 255);
-        text-shadow: 0 0 5px rgb(238, 156, 4);
-        display: flex;
-        flex-direction: row;
-    }
+    .pag-prin h2
+        width: 55%
+        text-decoration: underline
+        font-size: 30px
+        color: rgb(255, 255, 255)
+        text-shadow: 0 0 5px rgb(238, 156, 4)
+        display: flex
+        flex-direction: row
 
-    .leyenda-r p {
-        text-align: justify;
-        color: rgb(255, 255, 255);
-        font-size: 20px;
-        text-shadow: 0 0 5px rgb(255, 255, 255);
-        border: #af5205 solid 2px;
+    .leyenda-r p
+        text-align: justify
+        color: rgb(255, 255, 255)
+        font-size: 20px
+        text-shadow: 0 0 5px rgb(255, 255, 255)
+        border: #af5205 solid 2px
 
-        .leyenda-r a {
-            color: rgb(255, 255, 255);
-            background-color: rgb(243, 106, 27);
-            font-size: 25px;
-            border-radius: 3px;
-        }
+        .leyenda-r a
+            color: rgb(255, 255, 255)
+            background-color: rgb(243, 106, 27)
+            font-size: 25px
+            border-radius: 3px
 
-        .leyenda-r a:hover {
-            color: rgba(255, 255, 255, 0.63);
-            background-color: rgb(236, 197, 25);
-        }
-    }
-    
-    
-    @media (max-width: 480px) {
-        .leyenda-ini {
-            background-color: #857c7cd0;
-        }
+    &:hover
+        color: rgba(255, 255, 255, 0.63)
+        background-color: rgb(236, 197, 25)
 
-        .leyenda-ini h2 {
-            font-size: 15px;
-        }
+    @media (max-width: 480px)
+        .leyenda-ini
+            background-color: #857c7cd0
 
-        .leyenda-r p {
-            font-size: 10px;
-        }
+    & h2
+        font-size: 15px
 
-        .leyenda-r a {
-            font-size: 10px;
-        }
-    }
-}
+        .leyenda-r p
+            font-size: 10px
 
-
+        .leyenda-r a
+            font-size: 10px
 
 /*inicio footer*/
-footer {
-    width: 100%;
-    bottom: 0;
-    display: flex;
-    background-color: #333;
-    flex-direction: row nowrap;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: auto;
+footer
+    width: 100%
+    bottom: 0
+    display: flex
+    background-color: #333
+    flex-direction: row nowrap
+    justify-content: space-around
+    align-items: center
+    margin-top: auto
 
-.contacto {
-    color: orange;
-    font-size: 20px;
-    text-transform: uppercase;
-}
+.contacto
+    color: orange
+    font-size: 20px
+    text-transform: uppercase
 
-footer p {
-    color: rgb(252, 252, 252);
-    font-size: 15px;
-}
+footer p
+    color: rgb(252, 252, 252)
+    font-size: 15px
 
-.redes a {
-    font-size: 20px;
-    color: orange;
-    letter-spacing: 20px;
-}
+.redes a
+    font-size: 20px
+    color: orange
+    letter-spacing: 20px
 
-footer a:hover {
-    background-color: rgb(218, 168, 31);
-    color: rgb(218, 57, 8);
-}
+footer a:hover
+    background-color: rgb(218, 168, 31)
+    color: rgb(218, 57, 8)
 
-@media screen and (max-width: 420px) {
-    footer {
-        width: 100%;
-        display: table-column;
-    }
-}
-}
+@media screen and (max-width: 420px)
+    footer
+        width: 100%
+        display: table-column
+
 /*fin footer*/
 
-@import "_info";
-@import "_contacto";
-@import "_empresa";
-@import "_locales";
-@import "_logueate";
-@import "_productos";
-@import"_registrate";
+@import "_info"
+@import "_contacto"
+@import "_empresa"
+@import "_locales"
+@import "_logueate"
+@import "_productos"
+@import"_registrate"
