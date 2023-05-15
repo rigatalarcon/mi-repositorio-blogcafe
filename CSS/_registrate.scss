@@ -1,46 +1,4 @@
 /*formulario registrate*/
 
-.pagina-registrate {
-    width: 100%;
-    height: calc(100vh - 245px);
-    background-color: #333;
-    background-size: cover;
-    background-image: url(../multimedia/curso3.jpg);
-    padding-top: 20px;
-}
-
-.leyenda-registrate H2 {
-    width: 45%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-style: double;
-    
-}
-
-form {
-    background-color: rgba(116, 138, 101, 0.527);
-    border-radius: 2px;
-    color: #1f1b1b;
-    font-size: 15px;
-    padding: 10px;
-    margin: 0 auto;
-    width: 350px;
-    height: auto;
-    float: initial;
-}
-
-@media screen and (min-width: 560px) {
-    .form {
-        height: 200px;
-    }
-}
-
-@media screen and (max-width: 420px) {
-    form {
-        width: 450px;
-        font-size: 10px;
-    }
-}
 
 /*formulario registrate fin*/
