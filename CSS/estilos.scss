@@ -1,0 +1,177 @@
+@import "_info";
+@import "_contacto";
+@import "_empresa";
+@import "_locales";
+@import "_logueate";
+@import "_productos";
+*
+    .no margin{
+        margin:0
+    }
+    .no padding{
+        padding:0
+    }
+    .no box-sizing{
+        box-sizing: border-box
+    }
+header {
+    height: 150px
+    background-color: rgb(223, 160, 44)
+    border: 3px
+    padding: 20px
+}
+main{
+    width: 100%
+    height: calc(100vh - 200px)
+
+    .navbar-brand{
+    font-size: 50px
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    color: rgb(122, 48, 5)
+    text-decoration: underline
+    }
+    .navbar span {
+    color: #df6704
+    }
+    .navbar-toggler{
+    border: solid #df6704
+    }
+    .collapse{
+    flex-direction: row-reverse
+    }
+.navbar-nav
+    color: #fff
+    font-size: 25px
+
+.a nav-link
+    color: aliceblue
+
+.fa-bars
+    color: #c77e10
+}
+/*fin de header*/
+nav.barra
+    width: 100%
+
+div.barra-nav
+    font-size: 25px
+    color: #ccc
+    text-decoration: none
+    list-style: none
+    display: flex
+    justify-content: space-around
+    align-items: center
+    flex-direction: row
+
+.barra-nav li:hover
+    background-color: #c77e10
+    color: #333
+
+.container
+    position: relative
+
+.topleft
+    color: black
+    position: absolute
+    background-color: rgba(112, 128, 144, 0.295)
+    top: 8px
+    left: 16px
+    font-size: 18px
+
+img
+    width: 100%
+    height: auto
+
+.topnav
+    display: flex
+    justify-content: space-around
+    overflow: hidden
+    background-color: #333
+    background-image: linear-gradient(orange, #333)
+
+    & a
+        font-size: 20px
+        display: flex
+        justify-content: space-around
+        align-items: flex-start
+        color: white
+        text-align: center
+        padding: 14px 16px
+        text-decoration: none
+        transition: height 4s
+
+    & a:hover
+        background-color: #f3ab25a4
+        color: black
+
+@media screen and (max-width: 600px)
+.topnav
+    flex-direction: column
+    align-items: flex-start
+    width: auto
+
+    & a
+        border: #1a0303 solid 2px
+        width: 35%
+        font-size: 15px
+        margin: 3px
+        padding: 5px
+
+.contenedor
+    width: 50rem
+    margin: 0 auto
+
+/*inicio leyenda index*/
+.pag-prin
+    width: 100%
+    height: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    background-image: url(../multimedia/jumbotrom.jpg)
+    background-position: calc(100vh - 245px)
+    background-size: cover
+    background-repeat: no-repeat
+
+.leyenda-ini
+    margin: 10px
+    padding: 5px
+    color: #fffefe
+    text-shadow: 0 0 5px rgb(255, 255, 255)
+    background-color: transparent
+
+    & h2
+        font-size: 30px
+        color: rgb(235, 220, 220)
+        text-shadow: 0 0 5px black
+        display: flex
+        flex-direction: row
+
+.leyenda-r p
+    text-align: justify
+    color: rgb(10, 6, 2)
+    font-size: 20px
+    text-shadow: 0 0 5px rgb(255, 255, 255)
+    border: #af5205 solid 2px
+
+.leyenda-r a
+    color: black
+    background-color: rgb(243, 106, 27)
+    font-size: 15px
+    padding: 3px
+    text-align: center
+
+    &:hover
+        color: rgba(49, 231, 176, 0.63)
+        background-color: rgb(228, 138, 138)
+
+@media (max-width:480px)
+.leyenda-ini
+    background-color: #333
+
+    & h2
+        font-size: 15px
+
+.leyenda-r p{
+    font-size: 10px;
+}
